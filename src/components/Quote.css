@@ -1,0 +1,53 @@
+.Box {
+    display: flex;
+    position: relative;
+    width: 58vw;
+    /* height: 30.3vh; */
+    align-items: center;
+    justify-content: center;
+
+    background: #D05252;
+    border-radius: 30px;
+}
+
+.Quote {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 12px;
+    grid-row-gap: 12px;
+}
+
+.quote {
+    /* position: relative; */
+    align-items: center;
+    justify-content: center;
+    grid-area: 2 / 2 / 4 / 7;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 60px;
+    color: #FFFFFF;
+}
+
+.author {
+    /* position: relative;
+    align-items: center;
+    justify-content: center; */
+    grid-area: 5 / 4 / 6 / 5;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 38px;
+    color: #FFFFFF;
+}
+
+.bookmark-logo {
+    grid-area: 5 / 6 / 6 / 7;
+    color: #FFFFFF;
+}

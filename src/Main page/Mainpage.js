@@ -3,7 +3,8 @@ import './Mainpage.css'
 
 const Mainpage = () => {
     return (
-        <></>
+        <>
+        </>
     )
 }
 
