@@ -1,14 +1,22 @@
-import React from 'react';
-import './App.css';
-import Bookmarks from './components/Bookmarks';
-import Quote from './components/Quote';
+import * as React from 'react';
+// import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Bookmarks from "./pages/Bookmarks/Bookmarks";
+import Home from "./pages/Home/Home";
+import Navbar from "./components/Navbar/Navbar";
+
 
 function App() {
+  
   return (
-    <div className="App">
-      <Quote />
-    </div>
-  );
+    <BrowserRouter>
+      {/* <Navbar /> */}
+      <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="bookmarks" element={<Bookmarks />} />
+      </Routes>
+    </BrowserRouter>
+  )
 }
 
 export default App;

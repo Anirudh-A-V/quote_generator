@@ -1,0 +1,57 @@
+.Navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    position: sticky;
+    top: 5;
+    width: 100vw;
+    height: 5vh;
+    margin-bottom: 10vh;
+}
+
+.Navbar-Home {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 60px;
+    margin-top: 40px;
+}
+.Navbar-Home:hover {
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.Navbar-Home span{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.Navbar-Home:active {
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+.Navbar-Bookmarks {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 60px;
+    margin-top: 40px;
+}
+
+.Navbar-Bookmarks:hover {
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.Navbar-Bookmarks span{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.Navbar-Bookmarks:active {
+    color: #FFFFFF;
+    font-weight: 700;
+}
