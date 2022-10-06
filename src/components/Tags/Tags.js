@@ -1,6 +1,8 @@
 import React, { useEffect, useMemo, useState } from "react";
 import './Tags.css';
 
+import Quote from '../Quote/Quote';
+
 export default function Tags() {
 	const [data, setData] = useState(null);
 	
@@ -50,6 +52,8 @@ export default function Tags() {
 	};
 
 	return (
+		<>
+		<Quote />
 		<section className='Options'>
 			<select value={value} onChange={handleChange} className='Tags' placeholder=''>
 				{options.map((option) => (
@@ -67,5 +71,6 @@ export default function Tags() {
 				<span>Next Quote</span>
 			</button>
 		</section>
+		</>
 	)
 }

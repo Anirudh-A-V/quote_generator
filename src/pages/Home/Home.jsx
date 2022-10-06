@@ -11,7 +11,6 @@ function Home() {
         <Navbar />
       </div>
       <div className='Quote-container'>
-        <Quote />
         <Tags />
       </div>
     </div>
