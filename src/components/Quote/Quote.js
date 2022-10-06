@@ -8,7 +8,7 @@ const Quote = () => {
 
 	async function updateQuote() {
 		try {
-			const response = await fetch("https://api.quotable.io/random");
+			const response = await fetch(`${process.env.REACT_APP_API_URL}/random`);
 			const { statusCode, statusMessage, ...data } = await response.json();
 			if (!response.ok) throw new Error(`${statusCode} ${statusMessage}` + '\nNetwork response was not OK');
 			setData(data);
